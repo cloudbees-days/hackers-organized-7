@@ -10,6 +10,7 @@ jest.mock("../../src/utils/flag", () => ({
   },
 }));
 
+// ListItem section - westag
 describe("ListItem.vue", () => {
   const defaultProps = {
     title: "Test Article",
@@ -49,6 +50,7 @@ describe("ListItem.vue", () => {
     expect(commentsLink.getAttribute("href")).toBe(defaultProps.comment_link);
   });
 
+  // hide flag
   it("hides score when flag is disabled", () => {
     // Mock the flag to be disabled
     Flags.score.isEnabled.mockReturnValue(false);
