@@ -10,7 +10,6 @@ jest.mock("../../src/utils/flag", () => ({
   },
 }));
 
-// ListItem section - westag
 describe("ListItem.vue", () => {
   const defaultProps = {
     title: "Test Article",
